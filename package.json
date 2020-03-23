@@ -1,0 +1,32 @@
+{
+  "name": "node-server-typeorm-demo",
+  "version": "1.0.0",
+  "description": "node服务-TypeORM示例",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev nodemon --watch src -e ts,tsx --exec ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.8",
+    "moment": "^2.24.0",
+    "mysql": "^2.18.1",
+    "typeorm": "^0.2.24"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.2",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.0",
+    "@types/node": "^13.9.1",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.2",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^8.7.0",
+    "typescript": "^3.8.3"
+  }
+}
